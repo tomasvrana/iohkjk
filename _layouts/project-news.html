@@ -1,0 +1,182 @@
+---
+layout: project-news
+---    
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-24 col-md-24 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader projects_page">
+                                {% include nav-sub.html %}
+
+                                <div class="col-lg-21 col-lg-offset-3 col-md-24 col-sm-24 topcol">
+
+
+                                    <ul class="uppercase project-nav nav-tabs">
+                                        <li class="about"><a href="{{ site.baseurl }}/projects/{{ page.parent }}">{{ site.data.i18n[page.language].about }}</a></li>
+                                        <li class="news"><a href="{{ site.baseurl }}/projects/{{ page.parent }}/#news">{{ site.data.i18n[page.language].news }}</a></li>
+                                        <li class="team"><a href="{{ site.baseurl }}/projects/{{ page.parent }}/#team">{{ site.data.i18n[page.language].team }}</a></li>
+                                        <li class="contact"><a href="{{ site.baseurl }}/projects/{{ page.parent }}/#contact">{{ site.data.i18n[page.language].contact }}</a></li>
+                                    </ul>
+
+                                    <h1 class=" uppercase clear"><span class="c_f00">IOHK | </span> {{ page.title }}</h1>
+                                </div>
+                                
+                                <div class="col-lg-3 sidecol">
+                                    <br>
+                                </div>
+                                <div class="maincol col-lg-16 col-md-18 col-sm-18">
+                                    <div class="projectpost">
+                                        <div class="entry">
+                                            <img src="{{ page.thumbnail }}" alt="" class="fullwidth featured_img" />
+
+                                            <div class="tab-content clear">
+                                                <div role="tabpanel" class="tab-pane active" id="about">
+
+                                                    <div class="date"><span class="c_f00">{{ page.date | date: '%B %d, %Y' }}</span> by {{ page.author }}</div>
+                                                    <h2><a class="" href="{{ site.baseurl }}{{ post.permalink }}{% if page.language != 'en' %}/{{ page.language }}/{% endif %}">{{ post.title }}</a></h2>
+                                                    <div class="text">{{post.excerpt}}</div>
+
+                                                    {{ content }}
+
+                                                </div>
+
+                                                <div role="tabpanel" class="tab-pane" id="news">
+
+                                                    {% for post in site.categories[page.parent] %}
+                                                    {% if page.language == post.language %}
+                                                    {% if post.visible == true %}
+                                                    <div class="{{ post.slug }}">
+                                                    <p class="date marginb0"><span class="c_f00">{{ post.date | date: '%B %d, %Y' }}</span> by {{ post.author }}</p>
+                                                    <h2 class="margint0"><a class="" href="{{ site.baseurl }}{{ post.permalink }}{% if page.language != 'en' %}/{{ page.language }}/{% endif %}">{{ post.title }}</a></h2>
+                                                    <div class="text">{{post.excerpt}}</div>
+                                                    </div>
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endfor %}
+
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="team">
+
+                                                    {% for post in site.categories['scorex'] %}
+                                                    {% if page.language == post.language %}
+                                                    {% if post.layout == 'member' %}
+                                                                                                                                                                                                                                                                   
+                                                    <div class="profile team col-md-8 col-sm-8 col-xs-12 text-center uppercase smaller">
+                                                        <a href="{{ site.baseurl }}{{ post.permalink }}"><img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="" class="img-circle fullwidth" /></a>
+                                                        <h2><a href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></h2>
+                                                        <h4>{{ post.role }}</h4>
+                                                        <div class="social">
+                                                            {% if post.linkedin %}<a class="linkedin" href="{{ post.linkedin }}"><em class="fa fa-linkedin"></em></a>{% endif %}     
+                                                            {% if post.twitter %}<a class="twitter" href="{{ post.twitter }}"><em class="fa fa-twitter"></em></a>{% endif %}     
+                                                        </div>
+                                                        <div class="finger_print">
+                                                            <p>{{ post.fingerprint }}</p>
+                                                        </div>
+                                                        <div class="contact_but">
+                                                            <a href="javascript:io_class_toggle('.profile-47','contacting')" class="btn btn-default bg_trans">{{ site.data.i18n[page.language].contact }}</a>
+                                                            <div class="none input">
+                                                                <input type="text" class="form-control text-center" value="{{ post.contact }}" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endfor %}
+
+
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="contact">
+
+                                                    {% include form-project-contact.html %}
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-sm-6 rightcol">
+
+
+                                    {% for post in site.categories['team'] %}
+                                    {% if page.language == post.language %}
+                                    {% if post.layout == 'member' %}
+                                    {% if post.title == page.author %}
+                                                                                                                                                                                                                                                   
+                                    <div class="profile uppercase smaller {{ post.slug }}">
+                                        <a href="{{ site.baseurl }}{{ post.permalink }}"><img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="" class="img-circle" width="100" height="100" /></a>
+                                        <hr />
+                                        <h2><a href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></h2>
+                                        <h4>{{ post.role }}</h4>
+                                        <div class="social">
+                                            {% if post.linkedin %}<a class="linkedin" href="{{ post.linkedin }}" target="_blank"><em class="fa fa-linkedin"></em></a>{% endif %}     
+                                            {% if post.twitter %}<a class="twitter" href="{{ post.twitter }}" target="_blank"><em class="fa fa-twitter"></em></a>{% endif %}     
+                                        </div>
+                                        <div class="contact_but">
+                                            <a href="javascript:io_class_toggle('.{{ post.slug }}','contacting')" class="btn btn-default bg_trans">{{ site.data.i18n[page.language].contact }}</a>
+                                            <div class="none input">
+                                                <input type="text" class="form-control text-center" value="{{ post.contact }}" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endfor %}
+
+                                    <hr />
+
+                                    <div class="latest_posts">
+                                    <h5 class="uppercase">Latest posts</h5>
+                                    <ul>
+                                    {% for post in site.categories[page.parent] %}
+                                    {% if page.language == post.language %}
+                                    {% if post.layout == 'project-news' %}
+                                    <li><h3><a href="{{ site.baseurl }}{{ post.permalink }}"><strong>{{ post.title }}</strong> <span>{{ post.author }}</span></a></h3></li>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                    </div>
+
+
+                                    
+
+                                    <hr />
+                                    <div class="social bigger">
+                                      <a href="#" class="big c_fff"><em class="fa fa-github"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-linkedin"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-twitter"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-slack"></em></a>
+                                    </div>
+
+
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

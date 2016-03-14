@@ -1,0 +1,73 @@
+<head>
+<title>{{ page.title }} {{ site.title }}</title>
+<meta charset="utf-8">
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="twitter:card" content="{{ page.title }}">
+<meta name="twitter:site" content="{{ site.title }}">
+<meta name="twitter:creator" content="IOHK">
+<meta name="twitter:image" content="{{ '/images/iohk-share-logo.jpg' | prepend: site.baseurl }}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.title }} HongKong">
+
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="{{site.baseurl}}{{page.permalink}}" />
+<meta property="og:image" content="{{ '/images/iohk-share-logo.jpg' | prepend: site.baseurl }}" />
+<meta property="og:description" content="Hong Kong" />
+<meta property="og:site_name" content="{{ page.title }}" />
+
+
+<script>(function(){document.documentElement.className='js'})();</script>
+<script>
+var form_submit = false;
+var lowie = false;
+var lowerie = false;
+var iolang = '{{ page.language }}';
+var servername = 'iohk.io';
+var requesturi = '/';
+var homeurl = '//iohk.io';
+var sitename = '{{ site.title }}';
+var homename = '{{ page.title }}';
+var templurl = '//iohk.io/wp-content/themes/iohk';
+var temppath = '/js/newgl/';
+var pageslug = '{{ page.slug }}';
+var teampage = 'team';
+var jobspage = 'careers';
+var projectspage = 'projects';
+</script>
+
+<link rel="icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
+<link rel="stylesheet" href="{{ '/css/app.css' | prepend: site.baseurl }}" type="text/css" media="all" />
+<link rel="stylesheet" href="{{ '/css/base.css' | prepend: site.baseurl }}" type="text/css" media="all" />
+<link rel="stylesheet" href="{{ '/css/iohk.css' | prepend: site.baseurl }}" type="text/css" media="all" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C700%2C500&#038;subset=latin%2Ccyrillic&#038;ver=4.4.2" type="text/css" media="all" />
+{% if page.language == 'en' %}
+<link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+<style>h1,h2,.electrolize{font-family: 'Electrolize', sans-serif;text-transform: uppercase; letter-spacing: .05em}</style>
+{% endif %}
+<!--[if lte IE 9]>
+<script src="{{ "/js/lowie.js" | prepend: site.baseurl }}"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet"  href="{{ "/css/ie.css" | prepend: site.baseurl }}" type="text/css" media="all" />
+<script src="{{ "/js/html5.js" | prepend: site.baseurl }}"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script>lowerie = true;</script>
+<script src="{{ "/js/lowerie.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet"  href="{{ "/css/ieoff.css" | prepend: site.baseurl }}" type="text/css" media="all" />
+<![endif]-->
+
+<link hreflang="en" href="/" rel="alternate" />
+<link hreflang="ru" href="/ru/" rel="alternate" />
+<link hreflang="ja" href="/ja/" rel="alternate" />
+<link hreflang="x-default" href="/" rel="alternate" />
+
+<script type="text/javascript" src="{{ '/js/jquery.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+
+</head>

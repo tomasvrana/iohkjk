@@ -1,0 +1,12 @@
+
+{% if page.slug == 'about' or page.slug == 'team' or page.slug == 'contact' %}
+{% include nav-about.html %}
+{% endif %}
+
+{% if page.categories contains 'projects' or  page.categories contains 'news' %}
+{% if page.categories contains 'research' %}
+<div class="uppercase navbar text-right"></div>
+{% else %}
+{% include nav-projects.html %}
+{% endif %}
+{% endif %}

@@ -1,0 +1,8 @@
+
+                <ul id="menu-top" class="nav navbar-nav navbar-right uppercase">
+                  <li class="home"><a title="Home" href="{{ site.baseurl }}/{% if page.language != 'en' %}{{ page.language }}/{% endif %}">{{ site.data.i18n[page.language].home }}</a></li>
+                  <li class="about"><a title="About" href="{{ site.baseurl }}/about/{% if page.language != 'en' %}{{ page.language }}/{% endif %}">{{ site.data.i18n[page.language].about }}</a></li>
+                  <li class="research"><a title="Research" href="{{ site.baseurl }}/research/">{{ site.data.i18n[page.language].research }}</a></li>
+                  <li class="projects"><a title="Projects" href="{{ site.baseurl }}/projects/scorex/">{{ site.data.i18n[page.language].projects }}</a></li>
+                  <li class="career"><a title="Careers" href="{{ site.baseurl }}/careers/{% if page.language != 'en' %}{{ page.language }}/{% endif %}">{{ site.data.i18n[page.language].careers }}</a></li>
+                </ul>

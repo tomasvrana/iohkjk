@@ -1,0 +1,73 @@
+---
+layout: page-projects
+---       
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    {% if page.language != 'en' %}
+        <script>location.href='/projects/';</script>
+    {% endif %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-24 col-md-24 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader projects_page">
+                                {% include nav-sub.html %}
+                                <div class="col-lg-8 col-md-8 col-sm-10 sidecol uppercase">
+
+                                    <br>
+
+                                </div>
+                                <div class="maincol col-lg-16 col-md-16 col-sm-14">
+
+                                                                        
+                                    <div class="jobpost">
+                                        <div class="entry">
+                                            <div class="text">
+
+                                               
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var url = document.location.hash;
+
+        if (url.match('#')) {
+            jQuery('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+        } 
+
+        // Change hash for page-reload
+        jQuery('.nav-tabs a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+        });
+    </script>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

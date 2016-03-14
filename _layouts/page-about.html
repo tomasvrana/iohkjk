@@ -1,0 +1,55 @@
+---
+layout: page-about
+---       
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+
+            
+            <div class="row">
+                <div class="col-lg-24 col-md-24">
+                   <div id="io_loader">
+                       <div id="io_load">
+           
+                            <div class=" fader">
+
+                                {% include nav-sub.html %}
+
+                                <div class="title_block with_submenu">
+
+                                    <h1 class="">{{ page.title }}</h1>
+
+                                </div>
+
+
+                                <div class="post">
+                                    <div class="entry" title="{{ page.title }}">
+                                        <div class="text">
+
+                                            {{ content }}
+                                            <br><br><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,398 @@
+html{background:#090001}
+body{background:#090001 url('images/bg.jpg') top center no-repeat; font-family: 'Roboto'; font-weight: 300}
+body.io_globe_in{background-position:center -205px}
+
+.btn-default{background:transparent;color:#fff;}
+
+p{letter-spacing:.07em;}
+
+.sidecol a,
+.footrow a{text-decoration:none}
+
+
+textarea,
+.form-control,
+input[type=text]{color:#fff;background:#222;border-color:#222;-webkit-border-radius: 00px;border-radius:00px;}
+.input-group-addon{background:#111;border-color:#222;}
+
+textarea:focus,
+.form-control:focus,
+input[type=text]:focus{border:0;border-top:2px solid #f00;
+box-shadow:0 0 0 transparent;
+-o-box-shadow:0 0 0 transparent;
+-moz-box-shadow:0 0 0 transparent;
+-webkit-box-shadow:0 0 0 transparent;
+}
+
+
+.carousel-indicators {position: static;left: 50%;width: 100%;margin-left: 0%;}
+.carousel .controls{text-align:center}
+.carousel .controls ol{display:inline}
+
+
+
+.navbar a{ font-weight: 400; letter-spacing: 1px}
+
+.navbar-inverse{background:transparent;border:0}
+.navbar-brand {padding: 5px 10px;height: 59px;}
+.nav > li > a:hover, .nav > li > a:focus {background-color: transparent;}
+
+.navbar .subpages li a{ color: #eee;}
+.navbar .subpages li { margin:0 20px 0 0;}
+.navbar .subpages a:hover{ color: #ff0000; text-decoration: none}
+
+#page.home .navbar .home a,
+#page.about .navbar .about a,
+#page.careers .navbar .careers a,
+.subpages .open a,
+.navbar .open a,
+.subpages .active a,
+.navbar .active a{color: #ff0000 !important;}
+
+
+.welcome hr{ margin: 50px auto; border-color:#f00; opacity: 1 }
+
+
+
+.title_block h1{ font-size: 180%; margin: 0px 0 10px 0}
+.title_block h1 span,
+.title_block h1 a{color:#555}
+.title_block h1 a.flex-active{color:#fff}
+.title_block .subpages{ font-size: 93%; margin: 5px 0 0px 0}
+.title_block .navbar{ margin: 0;min-height: 0px;}
+
+
+.io_social_tag a{ font-size: 170%; padding: 0 0px 0 0;border:1px solid #777;text-align:center;width:35px;height:35px;display:inline-block;color:#777;-webkit-border-radius: 50px;border-radius: 50px;}
+.io_social_tag a:hover{color:#f00}
+
+
+
+
+
+#meas1,#meas2{ width: 10px; height: 10px; background: #f00}
+
+#measer{ width: 200px}
+#meas1{ position: relative; width: 100px;}
+#meas2{ position: relative; width: 50%}
+
+html.js #io_loader .jobpost.applying .apply_now_button,
+html.js #io_loader .jobpost .io_reply_form{display:none}
+html.js #io_loader .jobpost.applying .io_reply_form{display:block}
+html.js #io_loader .jobpost #thejobposition{display:none}
+html.js #io_loader .jobpost h1{ margin: 0 0 20px 0}
+
+
+.entry .jobs-applynow a:hover{text-decoration:none;background:#ff0000;border-color:#ff0000;}
+.entry .button-primary{padding:10px 20px!important;display:inline-block;font-weight:bold;border:0}
+
+
+#lang-chooser{list-style-type:none;float:right; padding:2px 0 0 5px}
+#lang-chooser li{float:left;margin:0}
+#lang-chooser a{display:block; width: 18px; height: 15px;padding:0}
+
+
+.jspVerticalBar{width: 10px;
+filter:alpha(opacity=20); -moz-opacity:0.2; opacity:0.2;
+}
+.jspHorizontalBar{height: 10px;
+filter:alpha(opacity=20); -moz-opacity:0.2; opacity:0.2;
+}
+.jspTrack{background: #444;}
+.jspDrag{background: #fff;width: 12px;}
+
+
+
+.carousel .item {left: 0 !important;
+  -webkit-transition: opacity .8s;-moz-transition: opacity .8s; -o-transition: opacity .8s; transition: opacity .8s; }
+.carousel-control { background: transparent !important; } 
+.next.left, .prev.right {opacity: 1; z-index: 1;}
+.active.left, .active.right {opacity: 0;z-index: 2;}
+
+
+
+
+
+#footrow .small{ letter-spacing: 1px;}
+#footrow .info a{ margin: 0 0 0 7px }
+
+
+#io_load .fader{opacity:0; }
+#io_load .navbar{ margin-bottom: 0px;}
+
+
+#io_load .profile{ padding: 15px}
+#io_load .profile h4,
+#io_load .profile h2{letter-spacing:1px;font-size:140%}
+#io_load .profile h2{margin:15px 0 4px 0}
+#io_load .profile h4{letter-spacing:1px;font-size:108%; margin:0 0 5px 0}
+#io_load .profile h2 a{color:#fff}
+#io_load .profile .bio{margin:40px 0 0 0}
+#io_load .profile .btn-default{opacity:.8;}
+#io_load .profile .btn-default:hover{opacity:1;}
+#io_load .profile .img-circle{border:1px solid #eee;padding:8px; width: 180px !important; height: 180px !important}
+#io_load .profile.founder .img-circle{border:1px solid #eee;padding:8px; width: 100% !important; height: 100% !important}
+#io_load .profile.founder .founder_tit{ margin: 15px 0}
+#io_load .profile.founder .finger_print{ margin: 15px 0 0 0}
+
+#io_load .profile .social{margin:15px 0}
+#io_load .profile .social a{display:inline-block;background:#555;color:#fff;width:24px;height:24px;vertical-align:middle;-webkit-border-radius: 30px;border-radius:30px; font-size: 160%;line-height:23px;margin:0 1px; text-align: center}
+#io_load .profile .social a .fa{vertical-align:middle}
+
+#io_load .profile .social a.linkedin{background:#1887FF}
+#io_load .profile .social a.twitter{background:#5AAAFB}
+#io_load .profile .social a.gplus{background:#BB0F16}
+#io_load .profile .social a.facebook{background:#3A579D}
+
+
+#io_load .profile.contacting .contact_but .btn{ display: none}
+#io_load .profile.contacting .contact_but .input.none{ display: block; padding: 10px 0}
+#io_load .profile.contacting .contact_but .input .form-control{display: inline-block; width: auto;}
+
+
+@media (min-width:768px) and (max-width:990px){
+  #io_load .profile.team .img-circle{width: 85% !important; height: 85% !important}
+
+}
+@media (max-width:450px){
+  #io_load .profile.team.col-xs-6{width:100%; float: none}
+  #io_load .profile.founder .col-xs-6{width:100%; float: none;text-align: center;}
+  #io_load .profile.founder .col-xs-6 .info{text-align: center;}
+#io_load .profile.founder .img-circle{width:72% !important; height: auto !important;margin:0 14% 20px 14% !important}
+#io_load .profile .bio{margin:0px 0 0 0}
+
+}
+
+
+
+
+
+
+
+
+
+html.js #io_load .sidecol ul {padding:0;list-style-type:none}
+html.js #io_load .sidecol li {border-top:2px solid #fff;font-size:115%;padding:3px 0;font-weight:300;letter-spacing:0px}
+html.js #io_load .sidecol li a {color:#fff}
+html.js #io_load .sidecol li.active{border-top:2px solid #f00;}
+
+html.js #io_load #jobs_loader h1{text-align:left}
+
+
+html.js #io_load .jobpost,
+html.js #navbar,
+html.js .subpages,
+html.js #io_loader .fader,
+html.js .footrow{
+-webkit-transition: opacity .7s;
+transition: opacity .7s;
+}
+
+.footrow{position:static;}
+.footrow hr{ margin-bottom: 5px}
+
+.row.form_fields{ width: 99%}
+.row.form_fields p{ display: none}
+.row.form_fields .col-sm-6 .form-group{ margin-bottom: 2px}
+
+
+
+html.js #navbar{opacity:0}
+html.js .subpages{opacity:0}
+html.js #io_loader .fader{opacity:0}
+html.js .footrow{opacity:0}
+
+html.js .introin #navbar{opacity:1}
+html.js .introin .subpages{opacity:1}
+html.js .transin  #io_loader .fader{opacity:1}
+html.js .transin .footrow{opacity:1}
+html.js .transin .footrow a,
+html.js .transin .footrow p{color:#777}
+html.js .transin .footrow a:hover{color:#f00}
+
+html.js #shade-top{ height:0px;}
+html.js #shade-bottom{ height:0px;}
+
+html.js .no_shading #shade-top{display: none}
+html.js .no_shading #shade-bottom{display:none}
+
+
+@media (min-width:1200px){
+  .navbar-brand img{margin-left:15px }
+  html.js #page.contact #io_load .sidecol .text{ margin: 0 0  0 80px}
+}
+
+html.js .team #io_load .entry,
+html.js .about #io_load .entry {width:100%}
+html.js .about #io_load .entry .text{margin:0px 0 0 35%;width:65%}
+html.js .about #io_load .entry h2{position:absolute;width:26%;z-index: 28;border-top:2px solid #f00;font-weight:300;letter-spacing:.1em; margin:7px 0 0 -27.45%;padding:6px 0;text-transform:uppercase;font-size:115%}
+html.js .about #io_load .entry p{ line-height: 1.9; font-weight:300; padding: 0 10px 0 0; margin-bottom: 20px}
+
+
+html.js #io_load .entry .text ul{padding:0 0 0 0px}
+html.js #io_load .entry .text ul{list-style-type: none;line-height: 1.4;}
+html.js #io_load .entry .text ul li{line-height: 1.6;}
+html.js #io_load .entry .text li:before {content: "»";float:left;width:10px;color: red;}
+
+
+
+
+@media (max-width:1200px) and (min-height:500px){
+html.js .about #io_load .entry h2{width:25%;margin:7px 0 0 -26.14%;}
+}
+@media (max-width:980px) and (min-height:500px){
+html.js .about #io_load .entry h2{width:33%;margin:7px 0 0 -35%;}
+}
+
+@media (max-width:768px){
+html.js .about #io_load .entry .text{margin:0px 0 0 0%;width:100%}
+html.js .about #io_load .entry h2{width:100%;margin:7px 0 0 0%;position:static;}
+}
+
+
+
+
+@media (min-width:768px) and (min-height:500px){
+
+  .title_block {margin:60px 0 0 80px}
+
+  html.js #io_load .jobs_page .entry,
+  html.js #io_load .jobs_page .sidecol,
+  html.js #io_load .jobs_page .maincol {padding-top:0px}
+  html.js #io_load .jobs_page .sidecol ul {margin-top:4px}
+  html.js #io_load .jobs_page .maincol .wpcf7-form { width: 90%}
+
+  html.js #io_load .jobpost .text h1{ margin: 0 0 50px 0;}
+  html.js #io_load .jobpost{ opacity: 1}
+  html.js .transsub #io_load .jobpost{opacity: 0}
+
+
+
+  html.js #io_load #io_inline_loader{ width: 70%; float: right; margin: 0 0 0 40px}
+  html.js #io_load #io_inline_loader h1.text-center{ text-align: left}
+
+  html.js #navbar{position:static;padding-top:0px;left:0;width:100%; z-index: 998;}
+  html.js .subpages{width:100%; z-index: 999;}
+  html.js .middlerow{position:static;padding-top:0px;left:0;width:100%}
+  html.js .footrow{position:static;padding-top:10px;left:0;width:100%;}
+
+  html.js .welcome  { padding:100px 200px 120px 200px}
+
+  html.js #io_loader .form label{ display: none}
+  html.js #io_loader .form #your-message{ height: 150px}
+
+  html.js #io_loader .form { width: 90%}
+
+
+  html.js { overflow-y:scroll;}
+
+}
+@media (max-width:768px) and (max-height:500px){
+
+  html.js .about #io_load .entry .text{margin:0px 0 0 0;width:100%}
+  html.js .about #io_load .entry h2{position:static;width:100%;border-top:2px solid #f00;font-weight:300;letter-spacing:.1em; margin:20px 0 10px 0;padding:6px 0;text-transform:uppercase;font-size:115%}
+
+}
+
+
+@media (min-width:768px) and (min-height:600px){
+  .title_block {margin:20px 0 0 80px}
+  html.js .about #io_load .entry .text{margin:5px 0 0 35%;}
+
+}
+
+@media (min-width:768px) and (min-height:740px){
+  .title_block {margin:30px 0 0 80px}
+
+  html.js #io_load .jobs_page .sidecol,
+  html.js #io_load .jobs_page .maincol {padding-top:50px}
+  html.js #page.home .footrow{position:fixed;bottom:10px;padding-top:10px;left:0;width:100%;}
+
+  html.js .welcome  { padding:200px 200px 120px 200px}
+
+  html.js .teamslider{min-height:500px}
+
+  html.js #io_load .fader{padding-top:10px}
+  html.js #io_load .fader .fader{padding-top:0px}
+}
+
+@media (min-width:768px) and (min-height:850px){
+
+  .title_block {margin:40px 0 0 80px}
+}
+
+
+@media (max-height:800px){
+html,body{background-position:center -25px}
+}
+
+@media (max-height:700px){
+html,body{background-position:center -45px}
+}
+
+@media (max-height:740px){
+html,body{background-position:center -75px}
+.navbar-brand img{width:170px !important;height:auto  !important}
+}
+
+@media (max-width:780px){
+html,body{background-position:center -99px}
+
+}
+
+@media (max-width:768px){
+html,body{background-position:center -99px}
+
+.welcome { padding:50px 100px}
+
+.navbar-brand img{margin:5px 0 3px -10px;width:170px !important;height:auto  !important}
+.navbar-toggle{border-color:transparent !important;margin-right:0;
+opacity:.8
+}
+
+.navbar-collapse.collapse.in{border-bottom:1px solid rgba(255,255,255,.2)}
+
+
+.footrow .language-chooser,.footrow .copy,.footrow .pull-right { float:none !important;clear:both;padding:0; }
+.footrow .language-chooser { display: block !important; width: 100%;padding:10px 0 !important;}
+
+
+}
+
+@media (max-width:500px){
+.welcome { padding:0px 20px}
+}
+
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    width:inherit;
+    height:inherit;
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+
+
+.flex-control-nav {width: 100%;position: static;text-align: center;}
+.flex-control-paging li {margin:0 2px}
+.flex-control-paging li a{background:#aaa}
+.flex-control-paging li a:hover{background:#fff}
+.flex-control-paging li a.flex-active{background:#E50000}
+
+
+#subscribe_to_newsletter .btn-default{border-color:#222;background:#363636}
+
+
+
+
+

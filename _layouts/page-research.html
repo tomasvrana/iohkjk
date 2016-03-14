@@ -1,0 +1,168 @@
+---
+layout: research
+---    
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-24 col-md-24 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader projects_page research_page">
+
+                                <div class="uppercase navbar text-right">
+                                   
+                                </div>
+
+
+
+                                <div class="col-lg-16 col-lg-offset-3 col-md-18 col-sm-24 topcol">
+                                    <ul class="uppercase project-nav nav-tabs">
+                                        <li class="about active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">{{ site.data.i18n[page.language].about }}</a></li>
+                                        <li class="news"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">{{ site.data.i18n[page.language].news }}</a></li>
+                                        <li class="researchers"><a href="#researchers" aria-controls="researchers" role="tab" data-toggle="tab">{{ site.data.i18n[page.language].researchers }}</a></li>
+                                        <li class="library"><a href="{{ site.baseurl }}/research/library">{{ site.data.i18n[page.language].library }}</a></li>
+                                        <li class="contact"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">{{ site.data.i18n[page.language].contact }}</a></li>
+                                    </ul>
+                                    <h1 class=" uppercase clear"><span class="c_f00">IOHK | </span> {{ page.title }}</h1>
+                                </div>
+                                
+
+                                <div class="col-lg-5 col-md-6 col-sm-24">
+                                    <hr />
+                                    <h3 class="electrolize uppercase clear marginb0"><span class="c_f00">IOHK | </span> Research</h3>
+                                </div>
+
+
+
+                         
+                                <div class="maincol col-lg-16 col-lg-offset-3 col-md-18 col-sm-18">
+
+
+                                    <div class="projectpost">
+                                        <div class="entry">
+                                            <div class="tab-content clear">
+                                                <div role="tabpanel" class="tab-pane active" id="about">
+                                                    <img src="{{ '/images/research.jpg' | prepend: site.baseurl }}" alt="" class="fullwidth featured_img" />
+                                                    {{ content }}
+                                                </div>
+
+                                                <div role="tabpanel" class="tab-pane" id="news">
+
+                                                    {% for post in site.categories['news'] %}
+                                                    {% if post.categories contains 'research' %}
+                                                    {% if page.language == post.language %}
+                                                    {% if post.visible == true %}
+                                                    <div class="{{ post.slug }}">
+                                                    <a href="{{ site.baseurl }}{{ post.permalink }}"><img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="" class="fullwidth featured_img" /></a>
+                                                    <p class="date marginb0"><span class="c_f00">{{ post.date | date: '%B %d, %Y' }}</span> by {{ post.author }}</p>
+                                                    <h2 class="margint0"><a class="" href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></h2>
+                                                    <div class="text">{{post.excerpt}}</div>
+                                                    </div>
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endfor %}
+
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="researchers">
+                                                    <img src="{{ '/images/research.jpg' | prepend: site.baseurl }}" alt="" class="fullwidth featured_img" />
+
+                                                    {% for post in site.categories['research'] %}
+                                                    {% if page.language == post.language %}
+                                                    {% if post.layout == 'member' %}
+                                                    <div class="profile researchers col-md-8 col-sm-8 col-xs-12 text-center uppercase smaller">
+                                                        <a href="{{ site.baseurl }}{{ post.permalink }}"><img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="" class="img-circle fullwidth" /></a>
+                                                        <h2><a href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></h2>
+                                                        <h4>{{ post.role }}</h4>
+                                                        <div class="social">
+                                                            {% if post.linkedin %}<a class="linkedin" href="{{ post.linkedin }}"><em class="fa fa-linkedin"></em></a>{% endif %}     
+                                                            {% if post.twitter %}<a class="twitter" href="{{ post.twitter }}"><em class="fa fa-twitter"></em></a>{% endif %}     
+                                                        </div>
+                                                        <div class="finger_print">
+                                                            <p>{{ post.fingerprint }}</p>
+                                                        </div>
+                                                        <div class="contact_but">
+                                                            <a href="javascript:io_class_toggle('.profile-47','contacting')" class="btn btn-default bg_trans">{{ site.data.i18n[page.language].contact }}</a>
+                                                            <div class="none input">
+                                                                <input type="text" class="form-control text-center" value="{{ post.contact }}" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                               
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endfor %}
+
+                                                </div>
+                                         
+                                                <div role="tabpanel" class="tab-pane" id="contact">
+                                                    <img src="{{ '/images/research.jpg' | prepend: site.baseurl }}" alt="" class="fullwidth featured_img" />
+                                                    {% include form-project-contact.html %}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-sm-6 rightcol">
+                                    <hr />
+
+                                    <img src="{{ '/images/earth-s.jpg' | prepend: site.baseurl }}" alt="" class="fullwidth" />
+
+                                    <hr />
+
+                                    <p>{{ page.address }}</p>
+                                    <p><span class="member_count c_f00">0</span> Active members</p>
+                                    <p>0 Comits</p>
+                                    <p>0 Channels</p>
+
+
+
+                                    <hr />
+                                    <div class="social bigger">
+                                      <a href="#" class="big c_fff"><em class="fa fa-github"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-linkedin"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-twitter"></em></a> &nbsp; 
+                                      <a href="#" class="big c_fff"><em class="fa fa-slack"></em></a>
+                                    </div>
+
+
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var url = document.location.hash;
+
+        if (url.match('#')) {
+            jQuery('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+        } 
+
+        // Change hash for page-reload
+        jQuery('.nav-tabs a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+        });
+    </script>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

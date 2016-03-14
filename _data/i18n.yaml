@@ -1,0 +1,110 @@
+en:
+    name: Name
+    phone: Phone
+    email: Email
+    subject: Subject
+    message: Message
+    head_office: Head Office
+    newsletter: Newsletter
+    submit: Submit
+    submit_application: Submit Application
+    apply_now: Apply Now!
+    your_cv: Your CV
+    cv_url: Your CV file URL address
+    subscribe: Subscribe
+    subscribe_to_nl: Subscribe to IOHK Newsletter
+    rights: All Rights Reserved
+    home: Home
+    about: About
+    careers: Careers
+    contact: Contact
+    projects: Projects
+    library: Library
+    research: Research
+    researchers: Researchers
+    blog: Blog
+    news: News
+    team: Team
+    founder: Founder
+    founders: Founders
+    coreteam: Core team
+    chief_executive_officer: Chief Executive Officer
+    chief_strategy_officer: Chief Strategy Officer
+    chief_operations_officer: Chief Operations Officer
+    chief_communications_officer: Chief Communications Officer
+    chief_design_officer: Chief Design Officer
+    full_stack_developer: Full Stack Developer
+
+ja:
+    name: 名
+    phone: 電話
+    email: Eメール
+    subject: テーマ
+    message: メッセージ
+    head_office: 本社
+    newsletter: ニュースレター
+    submit: 提出します
+    submit_application: 申請書を提出
+    apply_now: 今すぐ申し込みます！
+    your_cv: あなたの履歴書
+    cv_url: あなたの履歴書ファイルのURLアドレス
+    subscribe: 申し込む
+    subscribe_to_nl: IOHKニュースレターの購読
+    rights: 全著作権所有
+    home: ホーム
+    about: IOHKについて
+    careers: 求人
+    contact: 連絡先
+    projects: プロジェクト
+    library: ライブラリ
+    research: 研究
+    researchers: 研究者
+    blog: Blog
+    news: News
+    team: チーム
+    founder: 創業者
+    founders: ファウンダーズ
+    coreteam: コアチーム
+    chief_executive_officer: 最高経営責任者
+    chief_strategy_officer: 最高戦略責任者
+    chief_operations_officer: 最高執行責任者
+    chief_communications_officer: チーフ・コミュニケーション・オフィサー
+    chief_design_officer: チーフデザインオフィサー
+    full_stack_developer: フルスタックの開発
+
+ru:
+    name: имя
+    phone: Телефон
+    email: Эл. адрес
+    subject: Тема
+    message: Сообщение
+    head_office: Главный офис
+    newsletter: ПОЧТОВАЯ РАССЫЛКА
+    submit: Подтвердить
+    submit_application: Подать заявку
+    apply_now: Применить сейчас!
+    your_cv: Ваше резюме
+    cv_url: Ваш адрес URL CV файл
+    subscribe: Подписывайся
+    subscribe_to_nl: Подпишитесь на рассылку от IOHK
+    rights: ВСЕ АВТОРСКИЕ ПРАВА ЗАЩИЩЕНЫ
+    home: Главная
+    about: О нас
+    careers: Карьера
+    contact: контакт
+    projects: проектов
+    library: Библиотека
+    research: Исследование
+    researchers: Исследователи
+    blog: Blog
+    news: News
+    team: команда
+    founder: основатель
+    founders: Создатели
+    coreteam: Основная команда
+    chief_executive_officer: ГЛАВНЫЙ ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР
+    chief_strategy_officer: ГЛАВНЫЙ ДИРЕКТОР ПО СТРАТЕГИЯМ
+    chief_operations_officer: ГЛАВНЫЙ ОПЕРАЦИОННЫЙ ДИРЕКТОР
+    chief_communications_officer: ГЛАВНЫЙ ДИРЕКТОР ПО КОММУНИКАЦИЯМ 
+    chief_design_officer: ГЛАВНЫЙ ДИРЕКТОР ПО ДИЗАЙНУ
+    full_stack_developer: FULL STACK РАЗРАБОТЧИК

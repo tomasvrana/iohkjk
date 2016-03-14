@@ -1,0 +1,64 @@
+---
+layout: page-careers
+---       
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+
+
+
+    {% if page.language != 'en' %}
+        <script>location.href='/careers/';</script>
+    {% endif %}
+
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-24 col-md-24 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader jobs_page">
+                                <div class="col-lg-8 col-md-8 col-sm-10 sidecol uppercase">
+
+                                    {% include nav-jobs.html %}
+                                    <br>
+
+                                </div>
+                                <div class="maincol col-lg-16 col-md-16 col-sm-14">
+                                    <div id="jobs_loader">
+                                        <div id="jobs_load">
+
+                                                                                
+                                            <div class="jobpost">
+                                                <div class="entry">
+                                                    <div class="text">
+
+                                                       
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

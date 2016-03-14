@@ -1,0 +1,15 @@
+<div class="uppercase navbar text-right">
+	<ul class="subpages flat typenone pd0 fullwidth">
+
+        {% for post in site.categories['projects'] %}
+        {% if page.language == post.language %}
+        {% if post.visible == true %}
+			<li class="{{ post.slug }}"><a class="" href="{{ site.baseurl }}{{ post.permalink }}{% if page.language != 'en' %}/{{ page.language }}/{% endif %}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+	</ul>
+</div>
+
+

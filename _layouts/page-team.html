@@ -1,0 +1,90 @@
+---
+layout: page-team
+---       
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-lg-24 col-md-24 topcol">
+                   <div id="io_loader">
+                        <div id="io_load">
+                            <div class=" fader">
+                                <div class="row">
+
+                                    {% include nav-sub.html %}
+
+                                    <div class="entry" title="{{ site.data.i18n[page.language].founders }}/{{ site.data.i18n[page.language].coreteam }}">
+
+                                        <div class="col-lg-16 col-lg-offset-4 col-md-24 text-center">
+                                            <div class="row">
+                                                <div class="title_block with_submenu none">
+
+                                                    <h1 class="">{{ page.title }}</h1>
+
+                                                </div>
+
+                                                {% assign profile_small = 'col-sm-8 col-xs-12' %}
+                                                {% assign profile_big1 = 'col-sm-8 col-sm-offset-4 col-xs-12' %}
+                                                {% assign profile_big2 = 'col-sm-8 col-xs-12' %}
+                                                {% for post in site.categories['team'] %}
+                                                {% if page.language == post.language %}
+                                                                                                                                                                                                               
+                                                <div class="profile team {{ post.slug }} col-sm-8 col-xs-12 text-center uppercase smaller">
+
+                                                    <div class="img"><a href="{{ site.baseurl }}{{ post.permalink }}"><img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="" class="img-circle fullwidth" /></a></div>
+
+                                                    <h2><a href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></h2>
+
+                                                    
+
+                                                    <h4>{{ post.role }}</h4>
+                                                    <div class="social">
+                                                        {% if post.linkedin %}<a class="linkedin" href="{{ post.linkedin }}" target="_blank"><em class="fa fa-linkedin"></em></a>{% endif %}     
+                                                        {% if post.twitter %}<a class="twitter" href="{{ post.twitter }}" target="_blank"><em class="fa fa-twitter"></em></a>{% endif %}     
+                                                    </div>
+                                                    <div class="finger_print">
+                                                        <p>{{ post.fingerprint }}</p>
+                                                    </div>
+                                                    <div class="contact_but">
+                                                        <a href="javascript:io_class_toggle('.{{ post.slug }}','contacting')" class="btn btn-default bg_trans">{{ site.data.i18n[page.language].contact }}</a>
+                                                        <div class="none input">
+                                                            <input type="text" class="form-control text-center" value="{{ post.contact }}" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                {% if post.contact == 'jerremy.wood@iohk.io' %}<div class="clear"></div>{% endif %}
+
+                                                {% endif %}
+                                                {% endfor %}
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

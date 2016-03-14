@@ -1,0 +1,57 @@
+---
+layout: member
+---    
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            {% include nav-sub.html %}
+            <div class="row">
+                <div class="col-lg-24 col-md-24 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader member detail">
+                                <div class="col-lg-14 col-md-12 col-sm-8 sidecol uppercase text-center hidden-xs">
+                                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="" class="fullwidth picture" />
+                                </div>
+                                <div class="maincol col-lg-10 col-md-12 col-sm-16">
+
+                                    <div class="profile">
+                                        <div class="entry">
+                                            <a href="/team/{% if page.language != 'en' %}{{ page.language }}/{% endif %}" class="btn btn-default btn-sm pull-right hidden-xs">« Back</a>
+                                            <div class="clear"></div>
+                                            <h1 class="marginb0 uppercase text-right ">{{ page.title }}</h1>
+                                            <h4 class="margin0 uppercase text-right"><span class="c_f00">{{ page.role }}</span></h4>
+                                            <div class="social text-right">
+                                                {% if page.linkedin %}<a class="linkedin" href="{{ page.linkedin }}" target="_blank"><em class="fa fa-linkedin"></em></a>{% endif %}     
+                                                {% if page.twitter %}<a class="twitter" href="{{ page.twitter }}" target="_blank"><em class="fa fa-twitter"></em></a>{% endif %}     
+                                            </div> 
+                                            <img src="{{ site.baseurl }}/{{ page.image }}" alt="" class="fullwidth picture hidden-sm hidden-md hidden-lg" />
+                                            <div class="text">
+                                              	{{ content }}
+                                            </div>
+                                            <a href="/team/{% if page.language != 'en' %}{{ page.language }}/{% endif %}" class="btn btn-default btn-sm pull-right hidden-sm hidden-md hidden-lg">« Back</a><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
